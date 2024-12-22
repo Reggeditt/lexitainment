@@ -43,7 +43,7 @@ const ServicesSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-background/80">
+    <section className="py-20 mb-20 bg-gradient-to-b from-background to-background/80">
       <div className="container mx-auto px-4">
         <motion.h2 
           className="text-4xl font-bold text-center mb-12"

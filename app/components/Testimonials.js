@@ -12,21 +12,21 @@ const testimonials = [
     id: 1,
     name: "Alex Johnson",
     role: "Music Producer",
-    image: "/images/testimonial-1.jpg",
+    image: "/images/banner.jpg",
     quote: "Lexitainment's expertise in IP protection has been invaluable for my music career. They've helped me secure my rights and maximize my earnings."
   },
   {
     id: 2,
     name: "Samantha Lee",
     role: "Fashion Designer",
-    image: "/images/testimonial-2.jpg",
+    image: "/images/banner.jpg",
     quote: "The team at Lexitainment provided exceptional guidance in navigating the complex world of fashion IP. Their strategies have significantly boosted my brand's value."
   },
   {
     id: 3,
     name: "Michael Torres",
     role: "Digital Content Creator",
-    image: "/images/testimonial-3.jpg",
+    image: "/images/banner.jpg",
     quote: "Thanks to Lexitainment's platform marketing strategies, my online presence has grown exponentially. They truly understand the digital landscape."
   }
 ]
@@ -63,7 +63,7 @@ const TestimonialsSection = () => {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background/80 to-background">
+    <section className="py-10 bg-gradient-to-b from-background/80 to-background">
       <div className="container mx-auto px-4">
         <motion.h2 
           className="text-4xl font-bold text-center mb-12"
@@ -102,7 +102,7 @@ const TestimonialsSection = () => {
                   <div className="flex-grow">
                     <Quote className="w-10 h-10 text-primary/50 mb-4" />
                     <p className="text-lg md:text-xl mb-4 italic">
-                      "{testimonials[currentIndex].quote}"
+                      {`"${testimonials[currentIndex].quote}"`}
                     </p>
                     <h3 className="text-xl font-semibold">{testimonials[currentIndex].name}</h3>
                     <p className="text-muted-foreground">{testimonials[currentIndex].role}</p>
